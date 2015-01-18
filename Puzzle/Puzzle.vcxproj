@@ -78,9 +78,14 @@
   <ItemGroup>
     <ClCompile Include="EntryPoint.cpp" />
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="tspGreedy.cpp" />
+    <ClCompile Include="tspRegular.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="allheaders.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="tspinput.in" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -147,7 +147,7 @@ int next_move(matrix m,char turn)
 	}
 	return k;
 }
-int _main()
+int TicTacToeReferenceMain()
 {
 	for(int i=0,k=1;i<3;i++)
 	{

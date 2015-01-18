@@ -174,7 +174,7 @@ int getNextMove(Board &b, char playerTurn){
 		return k;
 	}
 }
-int main(){
+int TicMain(){
 	Board b;
 	bool GAMEOVER = false;
 	displayBoardPositions();
