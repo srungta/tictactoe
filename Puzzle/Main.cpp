@@ -1,12 +1,16 @@
 #include "allheaders.hpp"
+
 #define EMPTY 0
 #define HUMANOCCUPIED 3
 #define COMPOCCUPIED 9
+
 #define HUMANTURN 'h'
 #define COMPTURN 'c'
+
 #define COMPWINS 1
 #define HUMANWINS -1
 #define DRAW 0
+
 #define NOTOVERYET -2
 
 struct Board{
@@ -39,8 +43,12 @@ void displayBoard(Board m){
 
 //Checks if the game is over or who wins
 int checkWin(Board m){
-	if(m.placesOccupied < 9){
-		return NOTOVERYET;
+	for (int i = 0; i < 3; i++){
+		for (int j = 0; j < 3; j++){
+			if (m.mat[i][j] == EMPTY){
+				return NOTOVERYET;
+			}
+		}
 	}
 	//check rows
 	int sum = 0;
