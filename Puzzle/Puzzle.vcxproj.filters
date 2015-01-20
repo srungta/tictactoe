@@ -27,6 +27,9 @@
     <ClCompile Include="tspRegular.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="pattern.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="allheaders.hpp">
